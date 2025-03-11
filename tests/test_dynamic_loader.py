@@ -2,6 +2,7 @@ import unittest
 from unittest.mock import patch
 import types
 from importlib import machinery
+import sys
 
 from dynamic.dynamic_loader import DynamicClass, DynamicClassFinder, DynamicClassLoader
 from dynamic.source_grabbers import CloudStorage, SourceGrabber, SecretManager, LocalStorage
