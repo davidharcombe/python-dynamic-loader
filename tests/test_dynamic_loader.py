@@ -4,7 +4,7 @@ import types
 from importlib import machinery
 
 from dynamic.dynamic_loader import DynamicClassFinder, DynamicClassLoader
-from dynamic.source_grabbers import SourceGrabber
+from dynamic.source_grabbers import CloudStorage, SourceGrabber, SecretManager
 
 @patch.object(SourceGrabber, "fetch_source")
 @patch("google.cloud.storage.Client.get_bucket")
